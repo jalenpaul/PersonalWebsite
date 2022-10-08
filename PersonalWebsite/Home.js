@@ -6,11 +6,11 @@ var bImgSliderBack = document.getElementById("b_home_imgSliderBack");
 var bImgSliderForward = document.getElementById("b_home_imgSliderForward");
 
 var imgSliderCerts = document.getElementById("img_home_imgSlider");
-imgSliderCerts.src = '/Res/PNGs/CSS_certificate.png';
+imgSliderCerts.src = url('/PersonalWebsite/Res/PNGs/CSS_certificate.png');
 
 var arrImgCerts = [
-    url('/Res/PNGs/CSS_certificate.png'),
-    url('/Res/PNGs/HTML_certificate.png'),
+    url('/PersonalWebsite/Res/PNGs/CSS_certificate.png'),
+    url('/PersonalWebsite/Res/PNGs/HTML_certificate.png'),
 ];
 var imgPos = 0;
 
@@ -39,7 +39,6 @@ bImgSliderForward.onclick = function() {
     }
     imgSliderCerts.src = arrImgCerts[imgPos];
 }
-
 window.onload = function() {
     //TODO when the user leaves the page
 }
