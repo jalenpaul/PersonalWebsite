@@ -1,8 +1,8 @@
 {
     "hosting": {
         "rewrites": [{
-            "source": "/index.html",
-            "destination": "./Home.html"
+            "source": "**",
+            "destination": "/PersonalWebsite/HTML/Home.html"
         }],
         "public": "public",
         "ignore": [
