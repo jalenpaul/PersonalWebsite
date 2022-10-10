@@ -1,9 +1,16 @@
 {
     "hosting": {
         "rewrites": [{
-            "source": "**",
-            "destination": "/PersonalWebsite/HTML/Home.html"
-        }],
+                "source": "/index.html",
+                "destination": "/PersonalWebsite/HTML/Home.html",
+                "type": 301
+            },
+            {
+                "source": "/",
+                "destination": "/PersonalWebsite/HTML/Home.html",
+                "type": 301
+            }
+        ],
         "public": "public",
         "ignore": [
             "firebase.json",

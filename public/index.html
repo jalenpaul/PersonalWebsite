@@ -1,148 +1,149 @@
 <!DOCTYPE html>
+<meta charset="UTF-8">
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.11.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.11.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.11.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.11.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.11.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.11.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.11.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.11.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.11.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.11.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-        body {
-            background: #ECEFF1;
-            color: rgba(0, 0, 0, 0.87);
-            font-family: Roboto, Helvetica, Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        
-        #message {
-            background: white;
-            max-width: 360px;
-            margin: 100px auto 16px;
-            padding: 32px 24px;
-            border-radius: 3px;
-        }
-        
-        #message h2 {
-            color: #ffa100;
-            font-weight: bold;
-            font-size: 16px;
-            margin: 0 0 8px;
-        }
-        
-        #message h1 {
-            font-size: 22px;
-            font-weight: 300;
-            color: rgba(0, 0, 0, 0.6);
-            margin: 0 0 16px;
-        }
-        
-        #message p {
-            line-height: 140%;
-            margin: 16px 0 24px;
-            font-size: 14px;
-        }
-        
-        #message a {
-            display: block;
-            text-align: center;
-            background: #039be5;
-            text-transform: uppercase;
-            text-decoration: none;
-            color: white;
-            padding: 16px;
-            border-radius: 4px;
-        }
-        
-        #message,
-        #message a {
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-        }
-        
-        #load {
-            color: rgba(0, 0, 0, 0.4);
-            text-align: center;
-            font-size: 13px;
-        }
-        
-        @media (max-width: 600px) {
-            body,
-            #message {
-                margin-top: 0;
-                background: white;
-                box-shadow: none;
-            }
-            body {
-                border-top: 16px solid #ffa100;
-            }
-        }
-    </style>
+    <link rel="styleSheet" type="text/css" href="/PersonalWebsite/CSS/PersonalWebStyles.css">
+    <title>
+        Jalen Paul
+    </title>
+    <script type="text/javascript" src="/PersonalWebsite/Javascript/Home.js"></script>
 </head>
 
 <body>
-    <div id="message">
-        <h2>Hello There</h2>
-        <h1>Firebase Hosting Setup Complete</h1>
-        <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-        <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const loadEl = document.querySelector('#load');
-            // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-            // // The Firebase SDK is initialized and available here!
-            //
-            // firebase.auth().onAuthStateChanged(user => { });
-            // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-            // firebase.firestore().doc('/foo/bar').get().then(() => { });
-            // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-            // firebase.messaging().requestPermission().then(() => { });
-            // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-            // firebase.analytics(); // call to activate
-            // firebase.analytics().logEvent('tutorial_completed');
-            // firebase.performance(); // call to activate
-            //
-            // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-            try {
-                let app = firebase.app();
-                let features = [
-                    'auth',
-                    'database',
-                    'firestore',
-                    'functions',
-                    'messaging',
-                    'storage',
-                    'analytics',
-                    'remoteConfig',
-                    'performance',
-                ].filter(feature => typeof app[feature] === 'function');
-                loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-            } catch (e) {
-                console.error(e);
-                loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+    <nav id="nav_home">
+        <input id="search_nav" type="search" placeholder="Search..." pattern="[A-z][0-9]" required>
+        <button id="b_nav_search">Search</button>
+        <button id="b_nav_drawer" onclick="openDrawer()">☰</button>
+        <script>
+            function openDrawer() {
+                //TODO open drawer
             }
-        });
+        </script>
+    </nav>
+    <header id="headDisplay">
+        <article id="article_home_header">
+            <section id="section_home_headerBKG">
+                <img id="PFP" src="/PersonalWebsite/Res/JPGs/website_pfp.jpg" />
+                <h1>Jalen Paul</h1>
+            </section>
+        </article>
+        <!-- TODO add PassionIT logo to indicate that this was made by passionIT 
+                with Search, PFP/Name centered, Nav menu-->
+    </header>
+    <article id="article_home_content">
+        <!--
+        <section id="section_home_contactMe">
+            <h3><b>Contact Me</b></h3>
+            <h4>Lets connect, message me via email about anything and everything!!</h4>
+            <form id="form_home_contactMe" onsubmit="return validate()">
+                <input type="email" placeholder="your email..." id="input_home_email">
+                <input type="text" placeholder="message title..." id="input_home_emailHead">
+                <textarea name="emailTextBody" cols="40" rows="5" placeholder="Your message..."></textarea>
+                <input id="input_home_contactMeSubmit" type="submit" value="Submit">
+                <script>
+                    //TODO fix item
+                    var input_email = document.getElementById("input_home_email");
+                    var input_subject = document.getElementById("input_home_emailHead");
+                    var input_body = document.getElementById("input_home_contactMeSubmit");
+                    if (input_email != "" || input_subject != "") {
+
+                        if (input_body.val().trim().length < 1) {
+                            alert("Please fill out every box before submission.");
+                            return false;
+                        } else {
+                            const {
+                                initializeApp,
+                                applicationDefault,
+                                cert
+                            } = require('firebase-admin/app');
+                            const {
+                                getFirestore,
+                                Timestamp,
+                                FieldValue
+                            } = require('firebase-admin/firestore');
+                            initializeApp();
+                            const db = getFirestore();
+                            const docRef = db.collection('messages').doc();
+                            /*Email.send({
+                                    Host: "smtp.gmail.com",
+                                    Username: "jalenpaul2002@gmail.com",
+                                    Password: "luapnelaJ2319",
+                                    To: 'passionittech@gmail.com',
+                                    From: input_email.val,
+                                    Subject: input_subject,
+                                    Body: input_body,
+                                })
+                                .then(function(message) {
+                                    alert("mail sent successfully")
+                                }); */
+                        }
+
+                    } else {
+                        alert("Please fill out every box before submission.");
+                        return false;
+                    }
+                </script>
+            </form>
+        </section>  -->
+        <section>
+            <h3><b>Resources</b></h3>
+            <button id="b_home_resume" onclick="resumeClick(element)">Resume 📥</button>
+            <button id="b_home_email">Email 📧</button>
+            <button id="b_home_twitter">Twitter 🐦</button>
+            <button id="b_home_instagram">Instagram 📷</button>
+            <script>
+                function resumeClick() {
+
+                }
+            </script>
+        </section>
+        <section>
+            <h3><b>About Me</b></h3>
+            <h4> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </h4>
+        </section>
+        <section>
+            <h3><b>Certificates</b></h3>
+            <h4>
+                My credentialed skills from all areas of expertise.
+            </h4>
+            <section id="section_home_imgSlider">
+                <button id="b_home_imgSliderBack" onclick="back()">⇠</button>
+                <img id="img_home_imgSlider" />
+                <button id="b_home_imgSliderForward" onclick="next()">⇢</button>
+                <script>
+                    var imgSliderCerts = document.getElementById("img_home_imgSlider");
+                    var arrImgCerts = [
+                        '/PersonalWebsite/Res/PNGs/CSS_certificate.png',
+                        '/PersonalWebsite/Res/PNGs/HTML_certificate.png'
+                    ];
+                    imgSliderCerts.src = arrImgCerts[0];
+                    var imgPos = 0;
+
+                    function back() {
+                        if (imgPos != 0) {
+                            imgPos--;
+                        }
+                        imgSliderCerts.src = arrImgCerts[imgPos];
+                    }
+
+                    function next() {
+                        if (imgPos < arrImgCerts.length - 1) {
+                            imgPos++;
+                        }
+                        imgSliderCerts.src = arrImgCerts[imgPos];
+                    }
+                </script>
+            </section>
+        </section>
+    </article>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.11.0/firebase-app.js"; import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.11.0/firebase-analytics.js"; const firebaseConfig = { apiKey: "AIzaSyCsMas2GtnKRue1ltF_XzUu2K0mdun17EY",
+        authDomain: "personalwebsite-bd067.firebaseapp.com", projectId: "personalwebsite-bd067", storageBucket: "personalwebsite-bd067.appspot.com", messagingSenderId: "1000272746180", appId: "1:1000272746180:web:a325c4172e0d51c405db91", measurementId:"G-FSJWNDM5YW"
+        }; const app = initializeApp(firebaseConfig); const analytics = getAnalytics(app);
     </script>
 </body>
 
