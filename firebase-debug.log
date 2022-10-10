@@ -1,13 +1,13 @@
-[debug] [2022-10-10T18:06:33.502Z] ----------------------------------------------------------------------
-[debug] [2022-10-10T18:06:33.504Z] Command:       /usr/local/bin/firebase /Users/jalen/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
-[debug] [2022-10-10T18:06:33.504Z] CLI Version:   11.5.0
-[debug] [2022-10-10T18:06:33.504Z] Platform:      darwin
-[debug] [2022-10-10T18:06:33.504Z] Node Version:  v16.16.0
-[debug] [2022-10-10T18:06:33.505Z] Time:          Mon Oct 10 2022 11:06:33 GMT-0700 (Pacific Daylight Time)
-[debug] [2022-10-10T18:06:33.505Z] ----------------------------------------------------------------------
+[debug] [2022-10-10T20:45:00.573Z] ----------------------------------------------------------------------
+[debug] [2022-10-10T20:45:00.574Z] Command:       /usr/local/bin/firebase /Users/jalen/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2022-10-10T20:45:00.574Z] CLI Version:   11.5.0
+[debug] [2022-10-10T20:45:00.574Z] Platform:      darwin
+[debug] [2022-10-10T20:45:00.574Z] Node Version:  v16.16.0
+[debug] [2022-10-10T20:45:00.578Z] Time:          Mon Oct 10 2022 13:45:00 GMT-0700 (Pacific Daylight Time)
+[debug] [2022-10-10T20:45:00.578Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2022-10-10T18:06:33.548Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2022-10-10T18:06:33.548Z] > authorizing via signed-in user (jalenpaul2002@gmail.com)
+[debug] [2022-10-10T20:45:00.620Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-10T20:45:00.620Z] > authorizing via signed-in user (jalenpaul2002@gmail.com)
 [info] 
      ######## #### ########  ######## ########     ###     ######  ########
      ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
@@ -23,6 +23,49 @@ Before we get started, keep in mind:
 
   * You are initializing within an existing Firebase project directory
 
+[debug] [2022-10-10T21:13:53.075Z] ----------------------------------------------------------------------
+[debug] [2022-10-10T21:13:53.076Z] Command:       /usr/local/bin/firebase /Users/jalen/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2022-10-10T21:13:53.077Z] CLI Version:   11.5.0
+[debug] [2022-10-10T21:13:53.077Z] Platform:      darwin
+[debug] [2022-10-10T21:13:53.077Z] Node Version:  v16.16.0
+[debug] [2022-10-10T21:13:53.078Z] Time:          Mon Oct 10 2022 14:13:53 GMT-0700 (Pacific Daylight Time)
+[debug] [2022-10-10T21:13:53.078Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-10T21:13:53.116Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/undefined [none]
+[debug] [2022-10-10T21:13:53.570Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/undefined 403
+[debug] [2022-10-10T21:13:53.570Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/undefined {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-10-10T21:13:53.571Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-10-10T21:13:53.832Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (/Users/jalen/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/Users/jalen/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project undefined. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-10-10T21:14:56.706Z] ----------------------------------------------------------------------
+[debug] [2022-10-10T21:14:56.707Z] Command:       /usr/local/bin/firebase /Users/jalen/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2022-10-10T21:14:56.707Z] CLI Version:   11.5.0
+[debug] [2022-10-10T21:14:56.707Z] Platform:      darwin
+[debug] [2022-10-10T21:14:56.708Z] Node Version:  v16.16.0
+[debug] [2022-10-10T21:14:56.708Z] Time:          Mon Oct 10 2022 14:14:56 GMT-0700 (Pacific Daylight Time)
+[debug] [2022-10-10T21:14:56.708Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-10T21:14:56.745Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-10T21:14:56.746Z] > authorizing via signed-in user (jalenpaul2002@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/jalen/WebProjects/PersonalWebsite
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
 [info] 
 === Project Setup
 [info] 
@@ -30,16 +73,10 @@ Before we get started, keep in mind:
 [info] You can create multiple project aliases by running firebase use --add, 
 [info] but for now we'll just set up a default project.
 [info] 
-[debug] [2022-10-10T18:06:41.366Z] Using project from CLI flag: personal-website-5ba0a
-[debug] [2022-10-10T18:06:41.367Z] > refreshing access token with scopes: []
-[debug] [2022-10-10T18:06:41.368Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
-[debug] [2022-10-10T18:06:41.368Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2022-10-10T18:06:41.619Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
-[debug] [2022-10-10T18:06:41.619Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2022-10-10T18:06:41.688Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/personal-website-5ba0a [none]
-[debug] [2022-10-10T18:06:42.084Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/personal-website-5ba0a 200
-[debug] [2022-10-10T18:06:42.084Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/personal-website-5ba0a {"projectId":"personal-website-5ba0a","projectNumber":"111399449487","displayName":"Personal Website","name":"projects/personal-website-5ba0a","resources":{"hostingSite":"personal-website-5ba0a","storageBucket":"personal-website-5ba0a.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_aa3c16ce-519e-4eb5-85e9-e0206fdcea42"}
-[info] i  Using project personal-website-5ba0a (Personal Website) 
+[debug] [2022-10-10T21:15:15.446Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-10-10T21:15:15.997Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-10-10T21:15:15.997Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project personalwebsite-bd067 (PersonalWebsite) 
 [info] 
 === Hosting Setup
 [info] 
@@ -47,26 +84,26 @@ Before we get started, keep in mind:
 [info] will contain Hosting assets to be uploaded with firebase deploy. If you
 [info] have a build process for your assets, use your build's output directory.
 [info] 
-[info] ✔  Wrote JalenPaul.net/404.html 
-[debug] [2022-10-10T18:25:02.640Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
-[debug] [2022-10-10T18:25:02.910Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
-[debug] [2022-10-10T18:25:02.910Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.11.0","browserURL":"https://www.gstatic.com/firebasejs/9.11.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.11.0/firebase.tgz"},"live":{"version":"9.11","browserURL":"https://www.gstatic.com/firebasejs/live/9.11/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.11/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.11.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.11.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.11.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.11.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.11.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.11.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.11.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.11.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.11.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.11.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.11.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.11.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.11.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.11.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.11.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.11.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.11.0/firebase-firestore.memory.js"}}
-[info] ✔  Wrote JalenPaul.net/index.html 
+[info] ✔  Wrote public/404.html 
+[debug] [2022-10-10T21:15:33.827Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-10-10T21:15:34.199Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-10-10T21:15:34.200Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.11.0","browserURL":"https://www.gstatic.com/firebasejs/9.11.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.11.0/firebase.tgz"},"live":{"version":"9.11","browserURL":"https://www.gstatic.com/firebasejs/live/9.11/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.11/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.11.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.11.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.11.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.11.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.11.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.11.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.11.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.11.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.11.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.11.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.11.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.11.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.11.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.11.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.11.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.11.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.11.0/firebase-firestore.memory.js"}}
+[info] ✔  Wrote public/index.html 
 [info] 
 [info] i  Detected a .git folder at /Users/jalen/WebProjects/PersonalWebsite 
 [info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
 [info] 
 [info] Visit this URL on this device to log in:
-[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=645986149&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=248069505&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
 [info] 
 [info] Waiting for authentication...
-[debug] [2022-10-10T18:25:23.702Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
-[debug] [2022-10-10T18:25:23.702Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
-[debug] [2022-10-10T18:25:24.043Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
-[debug] [2022-10-10T18:25:24.043Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
-[debug] [2022-10-10T18:25:24.059Z] >>> [apiv2][query] GET https://api.github.com/user [none]
-[debug] [2022-10-10T18:25:24.410Z] <<< [apiv2][status] GET https://api.github.com/user 200
-[debug] [2022-10-10T18:25:24.411Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"jalenpaul","id":38700576,"node_id":"MDQ6VXNlcjM4NzAwNTc2","avatar_url":"https://avatars.githubusercontent.com/u/38700576?v=4","gravatar_id":"","url":"https://api.github.com/users/jalenpaul","html_url":"https://github.com/jalenpaul","followers_url":"https://api.github.com/users/jalenpaul/followers","following_url":"https://api.github.com/users/jalenpaul/following{/other_user}","gists_url":"https://api.github.com/users/jalenpaul/gists{/gist_id}","starred_url":"https://api.github.com/users/jalenpaul/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/jalenpaul/subscriptions","organizations_url":"https://api.github.com/users/jalenpaul/orgs","repos_url":"https://api.github.com/users/jalenpaul/repos","events_url":"https://api.github.com/users/jalenpaul/events{/privacy}","received_events_url":"https://api.github.com/users/jalenpaul/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":1,"public_gists":0,"followers":0,"following":0,"created_at":"2018-04-24T17:16:15Z","updated_at":"2021-08-06T18:38:37Z","private_gists":0,"total_private_repos":11,"owned_private_repos":11,"disk_usage":13305,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[debug] [2022-10-10T21:15:40.778Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2022-10-10T21:15:40.778Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2022-10-10T21:15:41.184Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2022-10-10T21:15:41.184Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2022-10-10T21:15:41.189Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-10-10T21:15:41.506Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-10-10T21:15:41.506Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"jalenpaul","id":38700576,"node_id":"MDQ6VXNlcjM4NzAwNTc2","avatar_url":"https://avatars.githubusercontent.com/u/38700576?v=4","gravatar_id":"","url":"https://api.github.com/users/jalenpaul","html_url":"https://github.com/jalenpaul","followers_url":"https://api.github.com/users/jalenpaul/followers","following_url":"https://api.github.com/users/jalenpaul/following{/other_user}","gists_url":"https://api.github.com/users/jalenpaul/gists{/gist_id}","starred_url":"https://api.github.com/users/jalenpaul/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/jalenpaul/subscriptions","organizations_url":"https://api.github.com/users/jalenpaul/orgs","repos_url":"https://api.github.com/users/jalenpaul/repos","events_url":"https://api.github.com/users/jalenpaul/events{/privacy}","received_events_url":"https://api.github.com/users/jalenpaul/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":1,"public_gists":0,"followers":0,"following":0,"created_at":"2018-04-24T17:16:15Z","updated_at":"2021-08-06T18:38:37Z","private_gists":0,"total_private_repos":11,"owned_private_repos":11,"disk_usage":13309,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
 [info] 
 [info] ✔  Success! Logged into GitHub as jalenpaul 
 [info] 
