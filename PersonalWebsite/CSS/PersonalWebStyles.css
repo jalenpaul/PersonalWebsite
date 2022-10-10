@@ -7,37 +7,35 @@ body {
 }
 
 #article_home_header {
-    position: relative;
-    height: 600px;
+    position: absolute;
+    height: 700px;
     width: 100%;
+    background-image: url("/PersonalWebsite/Res/img_PersonalWeb_headerbkg.jpg");
 }
 
-#img_home_headerBKG {
+#section_home_headerBKG {
     position: absolute;
-    background-size: cover;
-    height: 600px;
+    height: 100%;
     width: 100%;
-    top: 75px;
-    filter: brightness(50%);
+    background: #00000062;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #PFP {
     border-radius: 50%;
     width: 175px;
     height: 175px;
-    color: #BFD7B4;
-    display: block;
-    left: 45%;
-    top: 45%;
     position: absolute;
+    color: #BFD7B4;
 }
 
 h1 {
     color: #BFD7B4;
     text-align: center;
+    top: 60%;
     position: absolute;
-    top: 70%;
-    left: 40%;
     font-family: 'hs_serif';
     font-size: 45px;
 }

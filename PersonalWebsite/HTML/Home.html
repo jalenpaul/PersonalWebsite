@@ -23,14 +23,16 @@
     </nav>
     <header id="headDisplay">
         <article id="article_home_header">
-            <img id="img_home_headerBKG" src="/PersonalWebsite/Res/img_PersonalWeb_headerbkg.jpg" />
-            <img id="PFP" src="/PersonalWebsite/Res/JPGs/website_pfp.jpg" />
-            <h1>Jalen Paul</h1>
+            <section id="section_home_headerBKG">
+                <img id="PFP" src="/PersonalWebsite/Res/JPGs/website_pfp.jpg" />
+                <h1>Jalen Paul</h1>
+            </section>
         </article>
         <!-- TODO add PassionIT logo to indicate that this was made by passionIT 
                 with Search, PFP/Name centered, Nav menu-->
     </header>
     <article id="article_home_content">
+        <!--
         <section id="section_home_contactMe">
             <h3><b>Contact Me</b></h3>
             <h4>Lets connect, message me via email about anything and everything!!</h4>
@@ -50,7 +52,20 @@
                             alert("Please fill out every box before submission.");
                             return false;
                         } else {
-                            Email.send({
+                            const {
+                                initializeApp,
+                                applicationDefault,
+                                cert
+                            } = require('firebase-admin/app');
+                            const {
+                                getFirestore,
+                                Timestamp,
+                                FieldValue
+                            } = require('firebase-admin/firestore');
+                            initializeApp();
+                            const db = getFirestore();
+                            const docRef = db.collection('messages').doc();
+                            /*Email.send({
                                     Host: "smtp.gmail.com",
                                     Username: "jalenpaul2002@gmail.com",
                                     Password: "luapnelaJ2319",
@@ -61,7 +76,7 @@
                                 })
                                 .then(function(message) {
                                     alert("mail sent successfully")
-                                });
+                                }); */
                         }
 
                     } else {
@@ -70,12 +85,18 @@
                     }
                 </script>
             </form>
-        </section>
+        </section>  -->
         <section>
             <h3><b>Resources</b></h3>
             <button id="b_home_resume" onclick="resumeClick(element)">Resume 📥</button>
+            <button id="b_home_email">Email 📧</button>
             <button id="b_home_twitter">Twitter 🐦</button>
             <button id="b_home_instagram">Instagram 📷</button>
+            <script>
+                function resumeClick() {
+
+                }
+            </script>
         </section>
         <section>
             <h3><b>About Me</b></h3>
@@ -119,6 +140,11 @@
             </section>
         </section>
     </article>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.11.0/firebase-app.js"; import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.11.0/firebase-analytics.js"; const firebaseConfig = { apiKey: "AIzaSyCsMas2GtnKRue1ltF_XzUu2K0mdun17EY",
+        authDomain: "personalwebsite-bd067.firebaseapp.com", projectId: "personalwebsite-bd067", storageBucket: "personalwebsite-bd067.appspot.com", messagingSenderId: "1000272746180", appId: "1:1000272746180:web:a325c4172e0d51c405db91", measurementId:"G-FSJWNDM5YW"
+        }; const app = initializeApp(firebaseConfig); const analytics = getAnalytics(app);
+    </script>
 </body>
 
 </html>
