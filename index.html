@@ -1,1 +1,150 @@
-<h1>Hello!</h1>
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+
+<head>
+    <link rel="styleSheet" type="text/css" href="/PersonalWebsite/CSS/PersonalWebStyles.css">
+    <title>
+        Jalen Paul
+    </title>
+    <script type="text/javascript" src="/PersonalWebsite/Javascript/Home.js"></script>
+</head>
+
+<body>
+    <nav id="nav_home">
+        <input id="search_nav" type="search" placeholder="Search..." pattern="[A-z][0-9]" required>
+        <button id="b_nav_search">Search</button>
+        <button id="b_nav_drawer" onclick="openDrawer()">☰</button>
+        <script>
+            function openDrawer() {
+                //TODO open drawer
+            }
+        </script>
+    </nav>
+    <header id="headDisplay">
+        <article id="article_home_header">
+            <section id="section_home_headerBKG">
+                <img id="PFP" src="/PersonalWebsite/Res/JPGs/website_pfp.jpg" />
+                <h1>Jalen Paul</h1>
+            </section>
+        </article>
+        <!-- TODO add PassionIT logo to indicate that this was made by passionIT 
+                with Search, PFP/Name centered, Nav menu-->
+    </header>
+    <article id="article_home_content">
+        <!--
+        <section id="section_home_contactMe">
+            <h3><b>Contact Me</b></h3>
+            <h4>Lets connect, message me via email about anything and everything!!</h4>
+            <form id="form_home_contactMe" onsubmit="return validate()">
+                <input type="email" placeholder="your email..." id="input_home_email">
+                <input type="text" placeholder="message title..." id="input_home_emailHead">
+                <textarea name="emailTextBody" cols="40" rows="5" placeholder="Your message..."></textarea>
+                <input id="input_home_contactMeSubmit" type="submit" value="Submit">
+                <script>
+                    //TODO fix item
+                    var input_email = document.getElementById("input_home_email");
+                    var input_subject = document.getElementById("input_home_emailHead");
+                    var input_body = document.getElementById("input_home_contactMeSubmit");
+                    if (input_email != "" || input_subject != "") {
+
+                        if (input_body.val().trim().length < 1) {
+                            alert("Please fill out every box before submission.");
+                            return false;
+                        } else {
+                            const {
+                                initializeApp,
+                                applicationDefault,
+                                cert
+                            } = require('firebase-admin/app');
+                            const {
+                                getFirestore,
+                                Timestamp,
+                                FieldValue
+                            } = require('firebase-admin/firestore');
+                            initializeApp();
+                            const db = getFirestore();
+                            const docRef = db.collection('messages').doc();
+                            /*Email.send({
+                                    Host: "smtp.gmail.com",
+                                    Username: "jalenpaul2002@gmail.com",
+                                    Password: "luapnelaJ2319",
+                                    To: 'passionittech@gmail.com',
+                                    From: input_email.val,
+                                    Subject: input_subject,
+                                    Body: input_body,
+                                })
+                                .then(function(message) {
+                                    alert("mail sent successfully")
+                                }); */
+                        }
+
+                    } else {
+                        alert("Please fill out every box before submission.");
+                        return false;
+                    }
+                </script>
+            </form>
+        </section>  -->
+        <section>
+            <h3><b>Resources</b></h3>
+            <button id="b_home_resume" onclick="resumeClick(element)">Resume 📥</button>
+            <button id="b_home_email">Email 📧</button>
+            <button id="b_home_twitter">Twitter 🐦</button>
+            <button id="b_home_instagram">Instagram 📷</button>
+            <script>
+                function resumeClick() {
+
+                }
+            </script>
+        </section>
+        <section>
+            <h3><b>About Me</b></h3>
+            <h4> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </h4>
+        </section>
+        <section>
+            <h3><b>Certificates</b></h3>
+            <h4>
+                My credentialed skills from all areas of expertise.
+            </h4>
+            <section id="section_home_imgSlider">
+                <button id="b_home_imgSliderBack" onclick="back()">⇠</button>
+                <img id="img_home_imgSlider" />
+                <button id="b_home_imgSliderForward" onclick="next()">⇢</button>
+                <script>
+                    var imgSliderCerts = document.getElementById("img_home_imgSlider");
+                    var arrImgCerts = [
+                        '/PersonalWebsite/Res/PNGs/CSS_certificate.png',
+                        '/PersonalWebsite/Res/PNGs/HTML_certificate.png'
+                    ];
+                    imgSliderCerts.src = arrImgCerts[0];
+                    var imgPos = 0;
+
+                    function back() {
+                        if (imgPos != 0) {
+                            imgPos--;
+                        }
+                        imgSliderCerts.src = arrImgCerts[imgPos];
+                    }
+
+                    function next() {
+                        if (imgPos < arrImgCerts.length - 1) {
+                            imgPos++;
+                        }
+                        imgSliderCerts.src = arrImgCerts[imgPos];
+                    }
+                </script>
+            </section>
+        </section>
+    </article>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.11.0/firebase-app.js"; import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.11.0/firebase-analytics.js"; const firebaseConfig = { apiKey: "AIzaSyCsMas2GtnKRue1ltF_XzUu2K0mdun17EY",
+        authDomain: "personalwebsite-bd067.firebaseapp.com", projectId: "personalwebsite-bd067", storageBucket: "personalwebsite-bd067.appspot.com", messagingSenderId: "1000272746180", appId: "1:1000272746180:web:a325c4172e0d51c405db91", measurementId:"G-FSJWNDM5YW"
+        }; const app = initializeApp(firebaseConfig); const analytics = getAnalytics(app);
+    </script>
+</body>
+
+</html>
