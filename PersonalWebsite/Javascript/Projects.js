@@ -1,5 +1,7 @@
-var ele = document.getElementById("Test");
+const domContainer = document.querySelector('#header_projects');
+const root = ReactDOM.createRoot(domContainer);
 
-ele.onclick = function test() {
-    alert("test");
-}
+var intProjectCount = 0;
+
+const h2ProjectCount = (<h2> All Projects { intProjectCount } </h2>);
+root.render(h2ProjectCount);

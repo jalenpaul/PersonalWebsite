@@ -1,0 +1,64 @@
+#article_message {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#header_message {
+    width: 100%;
+    height: 75px;
+    padding: 10px;
+    background-color: #BFD7B4;
+    text-align: left;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+#h2_message_Message {
+    color: white;
+    font-family: 'hs_serif';
+}
+
+#section_message_messages {
+    height: 900px;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+#section_message_userInput {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+}
+
+#textArea_message_userInput {
+    width: 500px;
+}
+
+#b_message_submit {
+    width: 40px;
+    height: 40px;
+    color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+#label_message_login {
+    margin-left: 50px;
+}
+
+#b_message_login {
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+@font-face {
+    font-family: 'hs_serif';
+    src: url("/Res/Fonts/high-school-usa-font/hs_serif.ttf");
+}

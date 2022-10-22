@@ -4,17 +4,31 @@
 
 <head>
     <link rel="styleSheet" type="text/css" href="/PersonalWebsite/CSS/PersonalWebStyles.css">
+    <link rel="styleSheet" type="text/css" href="/PersonalWebsite/CSS/MessageStyles.css">
     <title>
         Messages
     </title>
 </head>
 
 <body>
-    <div>
-
-    </div>
+    <header id="header_message">
+        <h2 id="h2_message_Message">Message</h2>
+    </header>
+    <article id="article_message">
+        <section id="section_message_messages">
+            <ul id="list_message_messages"></ul>
+        </section>
+        <section id="section_message_userInput">
+            <textarea id="textArea_message_userInput" cols="40" rows="5" placeholder="Your message..."></textarea>
+            <button id="b_message_submit">⎆</button>
+            <label id="label_message_login">Logged in as:</label>
+            <button id="b_message_login"></button>
+        </section>
+    </article>
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script type="text/javascript" src="/PersonalWebsite/Javascript/Message.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 </body>
 
 </html>
